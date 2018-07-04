@@ -1,0 +1,14 @@
+from tkinter import *
+def printText():
+    b = Label(root, text="Action Performed")
+    b.pack()
+
+root = Tk()
+a = Label(root , text="Hello World")
+exitB = Button(root, text='exit', width=25, command=root.destroy)
+mss = Button(root, text = 'message', width = 25, command= printText )
+a.pack()
+exitB.pack()
+mss.pack()
+
+root.mainloop()
