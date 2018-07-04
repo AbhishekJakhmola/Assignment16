@@ -1,0 +1,13 @@
+from tkinter import *
+def printText():
+    a.config( text="Action Performed")
+
+root = Tk()
+exitB = Button(root, text='exit', width=25, command=root.destroy)
+mss = Button(root, text = 'message', width = 25, command= printText )
+a = Label(root, text="No Action Performed")
+a.pack()
+exitB.pack()
+mss.pack()
+
+root.mainloop()
