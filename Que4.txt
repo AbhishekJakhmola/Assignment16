@@ -1,0 +1,14 @@
+from tkinter import *
+def printText():
+    c = Label(root, text=b.get())
+    c.grid(row=1,column = 1)
+
+root = Tk()
+a = Label(root, text='Enter your text: ')
+a.grid(row=0, column=0)
+b = Entry(root)
+b.grid(row=0, column=1)
+mss = Button(root, text = 'Print', width = 25, command= printText )
+mss.grid(row = 1,column=0)
+
+root.mainloop()
